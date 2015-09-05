@@ -23,7 +23,7 @@ Financial Time Series Database
 
 ## Acknowledgements
 - Chrono is based on KDB/Q released by KX
-- Chrono uses an open source TorQ framework built by AquaQ
+- Chrono uses open source TorQ framework built by AquaQ
 
 
 *****
