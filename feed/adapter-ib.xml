@@ -1,0 +1,23 @@
+<config>
+        <ib
+                host="localhost"
+                port="4001"
+                client="27" />
+
+        <tickerplant host="localhost" port="6000" userpass="app:pass"/>
+        <database host="localhost" port="6002" userpass="app:pass"/>
+
+	<symbols>
+		<symbol name="K200" exchange="KSE" currency="KRW" type="FUT,OPT"/>
+		<symbol name="N225" exchange="OSE.JPN" currency="JPY" type="FUT,OPT"/>
+	</symbols>
+
+	<formats>
+		<format type="FUT" format="{0}-{1,date,ddMMMyy}-F"/>
+		<format type="OPT" format="{0}-{1,date,ddMMMyy}-{2,number,#.##}-{3}"/>
+	</formats>
+
+	<subscribe>
+		0!delete date,time from select by sym from refdata where underlying=`K200, expiry=min expiry
+	</subscribe>
+</config>

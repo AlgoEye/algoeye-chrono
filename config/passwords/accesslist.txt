@@ -1,0 +1,14 @@
+discovery:pass
+feed:pass
+gateway:pass
+hdb:pass
+housekeeping:pass
+kill:pass
+monitor:pass
+rdb:pass
+reporter:pass
+sort:pass
+tickerplant:pass
+wdb:pass
+chainedtp:pass
+admin:admin

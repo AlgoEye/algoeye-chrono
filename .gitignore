@@ -1,3 +1,8 @@
+hdb/*
+log/*
+journal/*
+tmp/*
+
 *.class
 
 # Mobile Tools for Java (J2ME)
